@@ -63,6 +63,8 @@ pub mod sha;
 
 use core::{arch::asm, mem, ptr};
 
+// enable libm symbols
+extern crate externc_libm;
 use getrandom::{register_custom_getrandom, Error};
 use risc0_zkvm_platform::{
     syscall::{nr::SYS_PANIC, sys_panic, sys_rand},
