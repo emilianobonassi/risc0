@@ -56,7 +56,7 @@ impl Region {
 // These should match the linker script in `risc0/build/risc0.ld`.
 pub const STACK: Region = Region::new(0x0000_0400, mb(8) - kb(1));
 pub const DATA: Region = Region::new(0x0008_0000, mb(24));
-pub const HEAP: Region = Region::new(0x0200_0000, mb(80));
+pub const HEAP: Region = Region::new(0x0200_0000, mb(160));
 pub const TEXT: Region = Region::new(0x0C00_0000, mb(80));
 pub const SYSTEM: Region = Region::new(0x1100_0000, mb(16));
 pub const PAGE_TABLE: Region = Region::new(0x1200_0000, mb(16));
