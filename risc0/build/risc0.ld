@@ -23,8 +23,8 @@ EXTERN(__start)
 MEMORY {
   stack        : ORIGIN = 0x00000400, LENGTH =  8M - 1K
   data    (RW) : ORIGIN = 0x00080000, LENGTH =  24M
-  heap         : ORIGIN = 0x02000000, LENGTH =  80M
-  prog    (X)  : ORIGIN = 0x07000000, LENGTH =  80M
+  heap         : ORIGIN = 0x02000000, LENGTH =  160M
+  prog    (X)  : ORIGIN = 0x0C000000, LENGTH =  80M
 }
 
 SECTIONS {
